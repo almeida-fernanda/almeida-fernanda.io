@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://almeida-fernanda.github.io/sitemap.xml
