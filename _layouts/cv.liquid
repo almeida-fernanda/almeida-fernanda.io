@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {{ page.title | default: "Curriculum Vitae" }}
+      {% assign pdf = page.cv_pdf | default: "/assets/pdf/cv.pdf" %}
+      <a
+        {% if pdf contains '://' %}
+          href="{{ pdf }}"
+        {% else %}
+          href="{{ pdf | relative_url }}"
+        {% endif %}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="float-right"
+        aria-label="Abrir PDF do currículo"
+      >
+        <i class="fa-solid fa-file-pdf"></i>
+      </a>
+    </h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+</div>
