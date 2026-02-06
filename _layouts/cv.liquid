@@ -2,27 +2,23 @@
 layout: default
 ---
 
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {{ page.title | default: "Curriculum Vitae" }}
-      {% assign pdf = page.cv_pdf | default: "https://www.dropbox.com/scl/fi/oan2l8gj5hrjd7t349rd8/cv.pdf?rlkey=q458hlx2d6yq8ty52rjdpo9rk&st=y9j9txq9?raw=1" %}
-      <a
-        {% if pdf contains '://' %}
-          href="{{ pdf }}"
-        {% else %}
-          href="{{ pdf | relative_url }}"
-        {% endif %}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="float-right"
-        aria-label="Abrir PDF do currículo"
-      >
-        <i class="fa-solid fa-file-pdf"></i>
-      </a>
-    </h1>
-    {% if page.description %}
-      <p class="post-description">{{ page.description }}</p>
+<h1 class="post-title">
+  {{ page.title | default: "Curriculum Vitae" }}
+  
+  {% comment %} Definimos a URL e removemos espaços extras com 'strip' {% endcomment %}
+  {% assign pdf_url = page.cv_pdf | default: "https://www.dropbox.com/scl/fi/oan2l8gj5hrjd7t349rd8/cv.pdf?rlkey=q458hlx2d6yq8ty52rjdpo9rk&st=y9j9txq9&raw=1" | strip %}
+
+  <a
+    {% if pdf_url contains '://' %}
+      href="{{ pdf_url }}"
+    {% else %}
+      href="{{ pdf_url | relative_url }}"
     {% endif %}
-  </header>
-</div>
+    target="_blank"
+    rel="noopener noreferrer"
+    class="float-right"
+    aria-label="Abrir PDF do currículo"
+  >
+    <i class="fa-solid fa-file-pdf"></i>
+  </a>
+</h1>
