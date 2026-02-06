@@ -6,7 +6,7 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {{ page.title | default: "Curriculum Vitae" }}
-      {% assign pdf = page.cv_pdf | default: "/assets/pdf/cv.pdf" %}
+      {% assign pdf = page.cv_pdf | default: "https://www.dropbox.com/scl/fi/oan2l8gj5hrjd7t349rd8/cv.pdf?rlkey=q458hlx2d6yq8ty52rjdpo9rk&st=y9j9txq9?raw=1" %}
       <a
         {% if pdf contains '://' %}
           href="{{ pdf }}"
