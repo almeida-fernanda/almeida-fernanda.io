@@ -15,7 +15,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website
 lang: en
-icon: "/assets/img/favicon.png"
+icon: "favicon.png"
 
 
 url: "https://almeida-fernanda.github.io"
