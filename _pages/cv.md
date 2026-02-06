@@ -11,7 +11,7 @@ description: Curriculum Vitae
 
 # Curriculum Vitae
 
-You can download my CV here: [Download PDF]({{ page.cv_pdf }})
+You can download my CV here: [Download PDF](https://almeida-fernanda.github.io/assets/pdf/cv.pdf)
 
 ---
 
