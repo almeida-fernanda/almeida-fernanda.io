@@ -11,7 +11,7 @@ description: Curriculum Vitae
 
 # Curriculum Vitae
 
-You can download my CV here: [Download PDF](https://www.dropbox.com/scl/fi/oan2l8gj5hrjd7t349rd8/cv.pdf?rlkey=q458hlx2d6yq8ty52rjdpo9rk&st=y9j9txq9?raw=1)
+You can download my CV here: [Download PDF]({{ page.cv_pdf }})
 
 ---
 
